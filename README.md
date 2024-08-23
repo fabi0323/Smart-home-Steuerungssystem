@@ -35,20 +35,9 @@ Wir entwickeln ein Steuerungssystem mit welchem man verschiedene Geräte in eine
 
 ### Testfälle
 
-| TC-№ | Ausgangslage             | Eingabe                          | Erwartete Ausgabe                                                         |
-| ---- | ------------------------ | -------------------------------- | ------------------------------------------------------------------------- |
-| 5.1  | Website geöffnet         | -                                | Es wird mittels eines Textes kurz erklärt wie man den Musikplayer bedient |
-| 4.1  | Website geöffnet         | Button für Dateisystem drücken   | Explorer öffent sich                                                      |
-| 4.2  | Explorer geöffnet        | MP3 Datei ausgewählt             | Datei wird zur queue hinzugefügt                                          |
-| 1.1  | Datei wird hinzugefügt   | Play Button Clicken              | Erster Song wird abgespielt                                               |
-| 2.1  | Song wird abgespielt     | Skip Button Clicken              | Song wird geskippt, der nächste In der Queue wird abgespielt              |
-| 3.1  | Song wird abgespielt     | Pause Button Clicken             | Song wird pausiert                                                        |
-| 3.2  | Song wurde pausiert      | Play Botton/Pause Button Clicken | Song wird weitergespielt                                                  |
-| 6.1  | Song hinzugefügt         | -                                | Songs werden in der Queue angezeigt                                       |
-| 6.2  | Songs in Queue vorhanden | Clear Queue Button Clicken       | Queue wird gelöscht                                                       |
-| 7.1  | Song in Queue zu Ende    | -                                | Nächster Song wird abgespielt                                             |
-| 8.1  | Website geöffent         | Regler wird nach links bewegt    | Musik Lautstärke sinkt                                                    |
-| 8.2  | Website geöffent         | Regler wird nach rechts bewegt   | Musik Lautstärke steigt                                                   |
+#### TC-№: #### a
+#### Beschreibung
+
 
 ### Planen
 
