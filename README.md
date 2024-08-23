@@ -24,37 +24,104 @@ Wir entwickeln ein Steuerungssystem mit welchem man verschiedene Geräte in eine
 | 1.1    | Muss            | Qualität | Als User möchte ich ein selbsterklärendes und übersichtliches GUI, damit ich mich einfach zurecht finden kann.                                                          |
 | 1.2    | Muss            | Qualität | Als User möchte ich ein modernes GUI haben, um meine User-Experience ertragbar zu machen.                                                                    |
 | 2.1    | Muss            | Funktional | Als User möchte ich die einzelnen Räume meines Smarthomes erfassen können, um meine Geräte zu erfassen.                                                                        |
-| 3.1    | Muss            | Funktional | Als User möchte ich Geräte innerhalb eines Raums erfassen können, um diese anzusteuern.                                            |
+| 3.1    | Muss            | Funktional | Als User möchte ich Geräte innerhalb eines Raums mit Namen und Typ erfassen können, um diese anzusteuern.                                            |
 | 3.2    | Muss            | Funktional | Als User möchte ich die Möglichkeit haben, Lichter, Heizungen und Storen als Geräte erfassen zu können, um diese anzusteuern.                                         |
 | 4.1    | Muss            | Funktional | Als User möchte ich die Daten der Geräte und Räume bearbeiten können, um die Daten aktuell zu halten.                                            |
 | 4.2    | Muss            | Funktional | Als User möchte ich Geräte und Räume aus dem System entfernen können, um keine überflüssigen Elemente zu haben. |
 | 4.3    | Muss            | Funktional | Als User möchte ich, dass die Daten der Geräte und Räume gespeichert werden, um das System wiederverwendbar zu machen.            |
 | 5.1    | Muss            | Funktional | Als User möchte ich Lichter an- und ausschalten können, um das Licht an- und ausschalten zu können.                                             |
 | 5.2    | Muss            | Funktional | Als User möchte ich die Temperatur der Heizungen anpassen können, um im Winter nicht zu erfrieren.                                             |
-| 5.3    | Kann            | Funktional | Als User möchte ich die Storen hoch- und runterlassen können.                                                          |
+| 5.3    | Kann            | Funktional | Als User möchte ich die Storen hoch- und runterlassen können und Sie anwinkeln, um zu kontrolieren wie viel Lich ins Haus kommt.                                        |
 
 ### Testfälle
 
-#### TC-№: #### a
-#### Beschreibung
+#### TC-№: 2.1.1
+Beschreibung: Räume erfassen
+Ausgangslage: Programm gestartet
+Eingabe: 1. Button(Raumerfassung) gedrückt | 2. Raum benannt | 3. Button(Erfassen) gedrückt
+Ausgaabe: 4. Raum mit gewähltem Namen erstellt
+
+#### TC-№: 2.1.2
+Beschreibung: Räume erfassen
+Ausgangslage: Programm gestartet
+Eingabe: 1. Button(Raumerfassung) gedrückt | 2. Raum benannt | 3. Button(Abbrechen) gedrückt
+Ausgaabe: 4. Erfassen des Raums abgebrochen
+
+#### TC-№: 3.1.1
+Beschreibung: Geräte erfassen
+Ausgangslage: Raum ausgewählt
+Eingabe: 1. Button(Geräterfassung) gedrückt | 2. Gerätetyp ausgewählt | 3. Gerät benannt | 4. Button(Erfassen) gedrückt
+Ausgaabe: 5. Gerät mit gewähltem Typ und Namen erstellt.
+
+#### TC-№: 3.1.2
+Beschreibung: Geräte erfassen
+Ausgangslage: Raum ausgewählt
+Eingabe: 1. Button(Geräterfassung) gedrückt | 2. Gerätetyp ausgewählt | 3. Gerät benannt | 4. Button(Abbrechen) gedrückt
+Ausgaabe: 5. Erfassen des geräts abbgebrochen.
+
+#### TC-№: 4.1.1
+Beschreibung: Räume bearbeiten
+Ausgangslage: Raum ausgewählt
+Eingabe: 1. Button(Bearbeiten) gedrückt | 2. Namen geändert | 3. Button(Speichern) gedrückt
+Ausgaabe: 4. Name des gewählten Raums aktialisiert
+
+#### TC-№: 4.1.2
+Beschreibung: Geräte bearbeiten
+Ausgangslage: Gerät ausgewählt
+Eingabe: 1. Button(Bearbeiten) gedrückt | 2. Namen geändert | 3. Typ geaändert | 4. Button(Speichern) gedrückt
+Ausgaabe: 5. Name und Typ des gewählten Geräts aktialisiert
+
+#### TC-№: 4.2.1
+Beschreibung: Räume entfernen
+Ausgangslage: Raum ausgewählt
+Eingabe: 1. Button(Entfernen) gedrückt | 2. Entfernen bestätigt
+Ausgaabe: 4. Raum entfernt
+
+#### TC-№: 4.2.2
+Beschreibung: Geräte entfernen
+Ausgangslage: Gerät ausgewählt
+Eingabe: 1. Button(Entfernen) gedrückt | 2. Entfernen bestätigt
+Ausgaabe: 3. Gerät entfernt
+
+#### TC-№: 4.3.1
+Beschreibung: Räume und Geräte speichern
+Ausgangslage: Programm neugestartet
+Eingabe: 2. Raum ausgewählt
+Ausgaabe: 1. zuvor erstellte Räume ersichtlich | 3. zuvor erstellte Geräte ersichtlich
+
+#### TC-№: 5.1.1
+Beschreibung: Licht an/aus
+Ausgangslage: Gerät vom Typ Licht ausgewählt (Licht aus)
+Eingabe: 1. Button(Licht an) gedrückt | 3. Button(Licht aus) gedrückt
+Ausgaabe: 2. Licht geht an | 4. Licht geht aus
+
+#### TC-№: 5.2.1
+Beschreibung: Heizung bedienen
+Ausgangslage: Gerät vom Typ heizung ausgewählt (Temperatur: 18°)
+Eingabe: 1. Slider(Temperatur) drei Stellen nach oben | 3. Slider(Temperatur) eine Stelle nach unten
+Ausgaabe: 2. (Temperatur: 21°) | 4. (Temperatur: 20°)
+
+#### TC-№: 5.2.1
+Beschreibung: Storen bedienen
+Ausgangslage: Gerät vom Typ Storen ausgewählt (Position: oben)
+Eingabe: 1. Button(Runter) gedrückt | 3. Button(Anwinkeln) gedrückt | 5. Button(Hoch) gedrückt
+Ausgaabe: 2. (Position: unten) | 4. (Position: angewinkelt) | 6. (Position: oben)
 
 
 ### Planen
 
-| US-№ | Datum      | Arbeitspaket                                           | Verantwortliche Person                      |
+| AP-№ | Datum      | Arbeitspaket                                           | Verantwortliche Person                      |
 | ---- | ---------- | ------------------------------------------------------ | ------------------------------------------- |
-| -    | 18.01.2024 | Projekt Idee wählen                                    | Elias Spycher und Justus Meister            |
-| -    | 19.01.2024 | Userstories, Testfälle und Planung erstellen           | Elias Spycher                               |
-| 1    | 19.01.2024 | Grundlegene Funktion Musik abzuspielen über Knopfdruck | Elias Spycher, Justus Meister               |
-| 2    | 26.01.2024 | Song skippen können                                    | Justus Meister                              |
-| 3    | 26.01.2024 | Musik pausieren können                                 | Justus Meister                              |
-| 4    | 26.01.2024 | Musik von Dateisystem verwenden                        | Fabian Meyer                                |
-| 5    | 26.01.2024 | Einleitung über den Musikplayer                        | Elias Spycher                               |
-| 6    | 26.01.2024 | Songs werden in Queue gespeichert                      | Fabian Meyer                                |
-| 7    | 02.02.2024 | Abspielen des nächsten Songs automatisieren            | Fabian Meyer                                |
-| 8    | 02.02.2024 | Lautstärken Regler erstellen                           | Justus Meister                              |
-| 9    | 23.02.2024 | Testen und Testprotokoll ausfüllen                     | Elias Spycher                               |
-| 10   | 23.02.2024 | Lernbericht schreiben                                  | Elias Spycher, Fabian Meyer, Justus Meister |
+| 1    | 23.08.2024 | Projekt Idee wählen                                    | Fabian Meyer, Justus Meister                |
+| 2    | 23.08.2024 | Anforderungen, Userstories, Testfälle schreiben        | Justus Meister                              |
+
+### Realisieren
+
+| AP-№ | Datum      | Durchgeführt von...  in... min                                           |
+| ---- | ---------- | ------------------------------------------------------ |
+| 1    | 23.08.2024 | Justus Meister, Fabian Meyer (15min)                   |
+| 2    | 23.08.2024 | Justus Meister (90min)                   |
+
 
 ### Testprotokoll
 
