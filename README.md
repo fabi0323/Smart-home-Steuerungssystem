@@ -12,23 +12,26 @@ Wir entwickeln ein Steuerungssystem mit welchem man verschiedene Geräte in eine
 | A-№ |  Beschreibung                                                                                                                                                  |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1    | Übersichtliches und modernes GUI                                                        |
-| 2    |     Erfassen und Speichern neuer Räume im Smarthome                                                                   |
+| 2    |     Erfassen neuer Räume im Smarthome                                                                   |
 |  3   |     Erfassen von Geräten innerhalb eines Raums im Smarthome                                                                  |
-|   4  |     Bearbeiten der verschiedenen Räume und Geräte                                                                   |
+|   4  |     Bearbeiten und Speichern der verschiedenen Räume und Geräte                                                                   |
 |  5   |      Ansteuern der verschiedenen erfassten Geräte                                                                  |
 
 ### User Stories
 
 | US-№ | Verbindlichkeit | Typ        | Beschreibung                                                                                                                                                  |
 | ---- | --------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | Muss            | Funktional | Ich will als Benutzer einen Play Button haben um einen Song abzuspielen, um Musik hören zu können.                                                            |
-| 2    | Muss            | Funktional | Ich will als Benutzer einen Song skippen können, um den Song nicht zu Ende hören müssen.                                                                      |
-| 3    | Muss            | Funktional | Ich will als Benutzer einen Song pausieren können, um den Player zu pausieren.                                                                                |
-| 4    | Muss            | Funktional | Ich will als Benutzer von meinem Dateisystem ein Lied hochladen können, um meine eigene Musik zu spielen.                                                     |
-| 5    | Muss            | Funktional | Ich will als Benutzer eine kleine Einleitung in den Musikplayer bekommen, damit ich weiss wie es funktioniert.                                                |
-| 6    | Muss            | Funktional | Ich will als Benutzer, dass die Songs in einer Queue sichtbar sind, die Queue soll mit einem Button gelert werden können, um neue Musik hinzufügen zu können. |
-| 7    | Muss            | Funktional | Ich will als Benutzer, dass der nächste Song automatisch abgespielt wird, sobald der vorherige Zuende ist, dass ich selber nichts machen muss.                |
-| 8    | Kann            | Funktional | Ich will als benutzer die Lautstärke regulieren können, um meinen Ohren einen gefallen zu machen.                                                             |
+| 1.1    | Muss            | Qualität | Als User möchte ich ein selbsterklärendes und übersichtliches GUI, damit ich mich einfach zurecht finden kann.                                                          |
+| 1.2    | Muss            | Qualität | Als User möchte ich ein modernes GUI haben, um meine User-Experience ertragbar zu machen.                                                                    |
+| 2.1    | Muss            | Funktional | Als User möchte ich die einzelnen Räume meines Smarthomes erfassen können, um meine Geräte zu erfassen.                                                                        |
+| 3.1    | Muss            | Funktional | Als User möchte ich Geräte innerhalb eines Raums erfassen können, um diese anzusteuern.                                            |
+| 3.2    | Muss            | Funktional | Als User möchte ich die Möglichkeit haben, Lichter, Heizungen und Storen als Geräte erfassen zu können, um diese anzusteuern.                                         |
+| 4.1    | Muss            | Funktional | Als User möchte ich die Daten der Geräte und Räume bearbeiten können, um die Daten aktuell zu halten.                                            |
+| 4.2    | Muss            | Funktional | Als User möchte ich Geräte und Räume aus dem System entfernen können, um keine überflüssigen Elemente zu haben. |
+| 4.3    | Muss            | Funktional | Als User möchte ich, dass die Daten der Geräte und Räume gespeichert werden, um das System wiederverwendbar zu machen.            |
+| 5.1    | Muss            | Funktional | Als User möchte ich Lichter an- und ausschalten können, um das Licht an- und ausschalten zu können.                                             |
+| 5.2    | Muss            | Funktional | Als User möchte ich die Temperatur der Heizungen anpassen können, um im Winter nicht zu erfrieren.                                             |
+| 5.3    | Kann            | Funktional | Als User möchte ich die Storen hoch- und runterlassen können.                                                          |
 
 ### Testfälle
 
