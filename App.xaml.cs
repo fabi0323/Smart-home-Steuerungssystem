@@ -13,5 +13,11 @@ namespace Steuerungssystem
     /// </summary>
     public partial class App : Application
     {
+        public void Application_Startup(object sender, StartupEventArgs e)
+        {
+            MainWindow StartWnd = new MainWindow();
+            StartWnd.Title = "Home-Control";
+            StartWnd.Show();
+        }
     }
 }
