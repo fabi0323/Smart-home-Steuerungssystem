@@ -116,6 +116,7 @@ Ausgaabe: 2. (Position: unten) | 4. (Position: angewinkelt) | 6. (Position: oben
 | 2    | 23.08.2024 | Anforderungen, Userstories, Testfälle schreiben        | Justus Meister                              |
 | 3    | 23.08.2024 | Vertrautmachen mit WPF       | Justus Meister, Fabian Meyer                           |
 | 4    | 30.08.2024 | Erstellen des MainGrids für das GUI        | Justus Meister                              |
+| 5    | 30.08.2024 | Erstellen und designen der Buttons        | Fabian Meyer                              |
 
 ### Realisieren
 
@@ -125,7 +126,7 @@ Ausgaabe: 2. (Position: unten) | 4. (Position: angewinkelt) | 6. (Position: oben
 | 2    | 23.08.2024 | Justus Meister (90min)                   |
 | 3    | 23.08.2024 | Justus Meister, Fabian Meyer (90min)                   |
 | 4    | 30.08.2024 | Justus Meister (50min)                   |
-
+| 5    | 30.08.2024 | Fabian Meyer (30min)                   |
 
 ### Testprotokoll
 
