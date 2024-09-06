@@ -18,7 +18,9 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Name="TopBar" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="#4A1942">
-            <Label FontWeight="Bold" Foreground="White">Home-Control</Label>
+            
+           <Label FontWeight="Bold" Foreground="White">Home-Control</Label>
+            
         </StackPanel>
 
         <WrapPanel Grid.Row="2" Grid.Column="1" Name="MainContent" Background="#EAEAEA">
