@@ -21,10 +21,15 @@
             <Label FontWeight="Bold" Foreground="White">Home-Control</Label>
         </StackPanel>
 
-        <WrapPanel Grid.Row="2" Name="MainContent" Background="#EAEAEA">
+        <WrapPanel Grid.Row="2" Grid.Column="1" Name="MainContent" Background="#EAEAEA">
             
         </WrapPanel>
 
-        <StackPanel Name="SideBar" Grid.Row="2" Grid.Column="2" Background="#2E1C2B"></StackPanel>
+        <StackPanel Name="SideBar" Grid.Row="2" Grid.Column="2" Background="#2E1C2B">
+            
+            <Button Content="Raum Erfassen" Foreground="White" Background="MediumPurple" Padding="10" Margin="10" />
+            <Button Content="Gerät Erfassen" Foreground="White" Background="MediumPurple" Padding="10" Margin="10" />
+
+        </StackPanel>
     </Grid>
 </Window>
