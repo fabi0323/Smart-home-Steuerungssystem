@@ -10,7 +10,7 @@ Wir entwickeln ein Steuerungssystem mit welchem man verschiedene Geräte in eine
 
 ### Anforderungen
 | A-№ |  Beschreibung                                                                                                                                                  |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---- | ------------------------------------------------------------------------------------ |
 | 1    | Übersichtliches und modernes GUI                                                        |
 | 2    |     Erfassen neuer Räume im Smarthome                                                                   |
 |  3   |     Erfassen von Geräten innerhalb eines Raums im Smarthome                                                                  |
@@ -20,7 +20,7 @@ Wir entwickeln ein Steuerungssystem mit welchem man verschiedene Geräte in eine
 ### User Stories
 
 | US-№ | Verbindlichkeit | Typ        | Beschreibung                                                                                                                                                  |
-| ---- | --------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---- | --------------- | ---------- | ----------------------------------------------------------------------------- |
 | 1.1    | Muss            | Qualität | Als User möchte ich ein selbsterklärendes und übersichtliches GUI, damit ich mich einfach zurecht finden kann.                                                          |
 | 1.2    | Muss            | Qualität | Als User möchte ich ein modernes GUI haben, um meine User-Experience ertragbar zu machen.                                                                    |
 | 2.1    | Muss            | Funktional | Als User möchte ich die einzelnen Räume meines Smarthomes erfassen können, um meine Geräte zu erfassen.                                                                        |
@@ -114,6 +114,8 @@ Ausgaabe: 2. (Position: unten) | 4. (Position: angewinkelt) | 6. (Position: oben
 | ---- | ---------- | ------------------------------------------------------ | ------------------------------------------- |
 | 1    | 23.08.2024 | Projekt Idee wählen                                    | Fabian Meyer, Justus Meister                |
 | 2    | 23.08.2024 | Anforderungen, Userstories, Testfälle schreiben        | Justus Meister                              |
+| 3    | 23.08.2024 | Vertrautmachen mit WPF       | Justus Meister, Fabian Meyer                           |
+| 4    | 30.08.2024 | Erstellen des MainGrids für das GUI        | Justus Meister                              |
 
 ### Realisieren
 
@@ -121,6 +123,8 @@ Ausgaabe: 2. (Position: unten) | 4. (Position: angewinkelt) | 6. (Position: oben
 | ---- | ---------- | ------------------------------------------------------ |
 | 1    | 23.08.2024 | Justus Meister, Fabian Meyer (15min)                   |
 | 2    | 23.08.2024 | Justus Meister (90min)                   |
+| 3    | 23.08.2024 | Justus Meister, Fabian Meyer (90min)                   |
+| 4    | 30.08.2024 | Justus Meister (50min)                   |
 
 
 ### Testprotokoll
