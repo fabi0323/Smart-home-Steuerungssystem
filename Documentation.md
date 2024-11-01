@@ -119,6 +119,10 @@ Ausgaabe: 2. (Position: unten) | 4. (Position: angewinkelt) | 6. (Position: oben
 | 4    | 30.08.2024 | Erstellen des MainGrids für das GUI        | Justus Meister                              |
 | 5    | 30.08.2024 | Erstellen und designen der Buttons        | Fabian Meyer                              |
 | 6    | 06.09.2024 | Erstellen und designen der Navigationsleisten        | Justus Meister        |
+| 7    | 13.09.2024 | Erstellen der Funktion fürs Hinzufügen vo Räumen        | Justus Meister        |
+| 8    | 13.09.2024 | Erstellen der Funktion fürs Hinzufügen vo Räumen        | Justus Meister        |
+| 9    | 20.09.2024 | Erstellen der Funktion fürs bedienen der Geräte       | Justus Meister        |
+
 
 ### Realisieren
 
@@ -129,7 +133,11 @@ Ausgaabe: 2. (Position: unten) | 4. (Position: angewinkelt) | 6. (Position: oben
 | 3    | 23.08.2024 | Justus Meister, Fabian Meyer (90min)                   |
 | 4    | 30.08.2024 | Justus Meister (50min)                   |
 | 5    | 30.08.2024 | Fabian Meyer (30min)                   |
-| 6    | 06.09.2024 | Justus Meister (40min)                   |
+| 6    | 06.09.2024 | Justus Meister (60min)                   |
+| 7    | 13.09.2024 | Justus Meister (80min)                   |
+| 8    | 13.09.2024 | Justus Meister (90min)                  |
+| 9    | 20.09.2024 | Justus Meister (80min)                  |
+
 
 ### Testprotokoll
 
