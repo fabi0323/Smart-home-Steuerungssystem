@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Steuerungssystem
 {
-    /// <summary>
-    /// Interaction logic for InputDialog.xaml
-    /// </summary>
     public partial class InputDialog : Window
     {
         public string Input => InputTextBox.Text;

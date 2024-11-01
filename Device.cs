@@ -9,25 +9,59 @@ namespace Steuerungssystem
     public abstract class Device
     {
         public string Name { get; set; }
-        public Device(string name) => Name = name;
+
+        public Device(string name)
+        {
+            Name = name;
+        }
+
+        public abstract void Operate();
     }
 
     public class Light : Device
     {
-        public bool IsOn { get; set; }
+        public bool IsOn { get; private set; }
+
         public Light(string name) : base(name) { }
+
+        public void TurnOn() => IsOn = true;
+        public void TurnOff() => IsOn = false;
+
+        public override void Operate()
+        {
+            IsOn = !IsOn;
+            Console.WriteLine($"{Name} light is now {(IsOn ? "On" : "Off")}");
+        }
     }
 
     public class Heater : Device
     {
-        public int Temperature { get; set; }
+        public int Temperature { get; private set; }
+
         public Heater(string name) : base(name) { }
+
+        public void SetTemperature(int temperature) => Temperature = temperature;
+
+        public override void Operate()
+        {
+            Console.WriteLine($"{Name} heater is set to {Temperature}°C");
+        }
     }
 
-    public class Blind : Device
+    public class Shutter : Device
     {
-        public int Position { get; set; }
-        public Blind(string name) : base(name) { }
+        public bool IsOpen { get; private set; }
+
+        public Shutter(string name) : base(name) { }
+
+        public void Open() => IsOpen = true;
+        public void Close() => IsOpen = false;
+
+        public override void Operate()
+        {
+            IsOpen = !IsOpen;
+            Console.WriteLine($"{Name} shutter is now {(IsOpen ? "Open" : "Closed")}");
+        }
     }
 
     public class Room
