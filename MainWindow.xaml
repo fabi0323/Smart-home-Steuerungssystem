@@ -6,91 +6,24 @@
         xmlns:local="clr-namespace:Steuerungssystem"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <Style x:Key="BtnBarStyle" TargetType="Border">
-            <Setter Property="Background" Value="White"/> 
-            <Setter Property="BorderBrush" Value="#c2c2c2"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="CornerRadius" Value="3"/>
-            <Setter Property="Margin" Value="3"/>
-            <Setter Property="Effect">
-                <Setter.Value>
-                    <DropShadowEffect 
-                        ShadowDepth="2" 
-                        BlurRadius="10" 
-                        Opacity="0.3" 
-                        Direction="320" 
-                        Color="Gray"/>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="BtnStyle" TargetType="Border">
-            <Setter Property="Background" Value="MediumPurple"/>
-            <Setter Property="BorderBrush" Value="#c2c2c2"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="CornerRadius" Value="3"/>
-            <Setter Property="Margin" Value="7"/>
-            <Setter Property="Effect">
-                <Setter.Value>
-                    <DropShadowEffect 
-                ShadowDepth="2" 
-                BlurRadius="10" 
-                Opacity="0.3" 
-                Direction="320" 
-                Color="Gray"/>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
-
-    <Grid Name="MainGrid">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="18*"/>
-        </Grid.RowDefinitions>
-        
+    <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="12*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Name="TopBar" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="#4A1942">
-            
-           <Label FontWeight="Bold" Foreground="White">Home-Control</Label>
-            
+        <!-- Room List -->
+        <StackPanel Grid.Column="0" Background="#EEE" Margin="10">
+            <TextBlock Text="Rooms" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+            <ListBox Name="RoomListBox" SelectionChanged="OnRoomSelected" />
+            <Button Content="Add Room" Click="OnAddRoomClick" Margin="0,10,0,0"/>
         </StackPanel>
-        
-        <Grid Grid.Row="2" Name="MainContent" Background="#EAEAEA">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="17*"/>
-            </Grid.RowDefinitions>
 
-            <Border Style="{StaticResource BtnBarStyle}">
-                <StackPanel Name="ViewBtnBar" Grid.Row="1" Orientation="Horizontal">
-                    <Border Style="{StaticResource BtnStyle}">
-                        <Button Name="RoomVwBtn" Content="Raum-Ansicht"  HorizontalAlignment="Center" Foreground="White" Background="Transparent" BorderThickness="0" Padding="2"/>
-                    </Border>
-
-                    <Border Style="{StaticResource BtnStyle}">
-                        <Button Name="DeviceVwBtn" Content="Geräte-Ansicht" Foreground="White" Background="Transparent" BorderThickness="0" Padding="2"/>
-                    </Border>
-                    <TextBlock Margin="8">Elias ist ein Gagalar</TextBlock>
-                </StackPanel>
-            </Border>
-        </Grid>
-
-        <StackPanel Name="SideBar" Grid.Row="2" Grid.Column="2" Background="#2E1C2B">
-            <Border Style="{StaticResource BtnStyle}">
-                <Button Content="Raum Erfassen" Foreground="White" Background="Transparent" BorderThickness="0" Padding="7"/>
-            </Border>
-            
-            <Border Style="{StaticResource BtnStyle}">
-                <Button Content="Gerät Erfassen" Foreground="White" Background="Transparent" BorderThickness="0" Padding="7"/>
-            </Border>
-
-            
+        <!-- Device List for Selected Room -->
+        <StackPanel Grid.Column="1" Background="#FFF" Margin="10">
+            <TextBlock Text="Devices" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+            <ListBox Name="DeviceListBox" />
+            <Button Content="Add Device" Click="OnAddDeviceClick" Margin="0,10,0,0"/>
         </StackPanel>
     </Grid>
 </Window>
