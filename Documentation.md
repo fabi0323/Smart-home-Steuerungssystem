@@ -122,6 +122,7 @@ Ausgaabe: 2. (Position: unten) | 4. (Position: angewinkelt) | 6. (Position: oben
 | 7    | 13.09.2024 | Erstellen der Funktion fürs Hinzufügen vo Räumen        | Justus Meister        |
 | 8    | 13.09.2024 | Erstellen der Funktion fürs Hinzufügen vo Räumen        | Justus Meister        |
 | 9    | 20.09.2024 | Erstellen der Funktion fürs bedienen der Geräte       | Justus Meister        |
+| 10    | 20.09.2024 | Feinschliff des Codes und Design       | Justus Meister        |
 
 
 ### Realisieren
@@ -139,23 +140,23 @@ Ausgaabe: 2. (Position: unten) | 4. (Position: angewinkelt) | 6. (Position: oben
 | 9    | 20.09.2024 | Justus Meister (80min)                  |
 
 
+
 ### Testprotokoll
 
 | TC-№   | Datum      | Resultat | Tester        |
 | ------ | ---------- | -------- | ------------- |
-| 1.5.1  | 23.02.2023 | OK       | Elias Spycher |
-| 2.4.1  | 23.02.2023 | OK       | Elias Spycher |
-| 3.4.2  | 23.02.2023 | OK       | Elias Spycher |
-| 4.1.1  | 23.02.2023 | OK       | Elias Spycher |
-| 5.2.1  | 23.02.2023 | OK       | Elias Spycher |
-| 6.3.1  | 23.02.2023 | OK       | Elias Spycher |
-| 7.3.2  | 23.02.2023 | OK       | Elias Spycher |
-| 8.6.1  | 23.02.2023 | OK       | Elias Spycher |
-| 9.6.2  | 23.02.2023 | OK       | Elias Spycher |
-| 10.7.1 | 23.02.2023 | OK       | Elias Spycher |
-| 11.8.1 | 23.02.2023 | OK       | Elias Spycher |
-| 12.8.2 | 23.02.2023 | OK       | Elias Spycher |
+| 2.1.1  | 01.11.2024 | OK       | Justus Meister |
+| 2.1.2  | 01.11.2024 | OK       | Justus Meister |
+| 3.1.1  | 01.11.2024 | OK       | Justus Meister |
+| 3.1.2  | 01.11.2024 | OK       | Justus Meister |
+| 4.1.1  | 01.11.2024 | NOK       | Justus Meister |
+| 4.1.2  | 01.11.2024 | NOK       | Justus Meister |
+| 4.2.1  | 01.11.2024 | NOK       | Justus Meister |
+| 4.2.2  | 01.11.2024 | NOK       | Justus Meister |
+| 4.3.1  | 01.11.2024 | NOK       | Justus Meister |
+
+
 
 ### Testbericht
 
-Das Projekt funktioniert ziemlich fehlerfrei. Es konnten Alle funktionen umgesetzt werden.
+Die Grundfunktionen funktionieren, jedoch funktionieren ein paar Funktionen nicht.
